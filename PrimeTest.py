@@ -22,10 +22,12 @@ def gen_image(width, height):
                 
             elif is_prime(n):
                 pix[x,y] = (255, 0, 0)
-                print(n)
+                #print(n)
             else:
                 pix[x,y] = (0, 0, 0)
 
     im.save("prime.png", "PNG")
 
 gen_image(141, 141)
+
+print('Done!')
